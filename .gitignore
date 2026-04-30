@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Custom Project Settings ---
+
+# Model files
+*.pkl
+*.pickle
+*.joblib
+
+# Output directory
+output/
+outputs/
+result/
+results/
