@@ -27,8 +27,8 @@ def predict(X_test, species_test):
     if use_ensemble and lgbm is not None:
         # LGBM予測
         preds_lgbm = lgbm.predict(X_test)
-        # 最終アンサンブル (PLS 0.6 : LGBM 0.4 など調整)
-        final_preds = (preds_pls * 0.6) + (preds_lgbm * 0.4)
+        # 最終アンサンブル
+        final_preds = (preds_pls * 0.8) + (preds_lgbm * 0.2)
     else:
         final_preds = preds_pls
 
